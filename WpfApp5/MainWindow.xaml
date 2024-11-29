@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="45" Color="LightGray" ShadowDepth="0" />
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Hello, you got on the IT-english platform" FontSize="25" FontWeight="Bold" Margin="0 0 0 20" />
+                <Grid Margin="0 0 0 20" >
+                    <Button HorizontalAlignment="Left" Content="Registration" />
+                    <Button HorizontalAlignment="Left" Content="Enter" Margin="459,0,0,0" Height="20" VerticalAlignment="Bottom" Click="Button_Click"  />
+                </Grid>
+                <TextBox x:Name="Login" GotFocus="Login_GotFocus" LostFocus="Login_LostFocus" Text="введите ваш логин"  />
+                <TextBox  x:Name="Password" Text="введите ваш пароль" GotFocus="Password_GotFocus" LostFocus="Password_LostFocus"/>
+                <TextBox Margin="0 0 0 10" Text="введите вашу электронную почту" x:Name="email" GotFocus="Email_GotFocus" LostFocus="Email_LostFocus" />
+                <Button Content="register" Margin="0 0 0 0"    />
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
