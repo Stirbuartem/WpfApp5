@@ -23,5 +23,13 @@ namespace WpfApp5
         {
             InitializeComponent();
         }
+
+        private void teacher_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            Window5 window5 = new Window5();
+            this.Close();
+            window5.Show();
+        }
     }
 }
