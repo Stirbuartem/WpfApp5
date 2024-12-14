@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="650">
     <Grid>
-        <Image Source="/image/it.jpg" Margin="-110,2,-119,0" />
-        <Button x:Name="teacher" Content="Teacher" Margin="0,0,532,354" FontSize="25" FontWeight="Bold" />
-        <Button x:Name="courses" Content="Courses" Margin="0,80,532,263" FontSize="25" FontWeight="Bold" />
-        <Button x:Name="reviews" Content="Reviews" Margin="0,171,532,164" FontSize="25" FontWeight="Bold" />
+        <Image x:Name="sds" Source="/image/vb5NfkqaIK5Sng9u6j4gA.jpg" Margin="-51,-63,-51,-63" />
+        <Button x:Name="Арторлдоисты" Content="Teacher" Margin="0,0,532,354" FontSize="25" FontWeight="Bold" Background="#23dc2f" Click="teacher_Click" />
+        <Button x:Name="Музыка" Content="Courses" Margin="0,80,532,263" FontSize="25" FontWeight="Bold" Background="#23dc2f" Click="courses_Click" />
+        <Button x:Name="Избранное" Content="Reviews" Margin="0,171,532,164" FontSize="25" FontWeight="Bold" Background="#23dc2f" />
+        
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
 ﻿using System.Text;
+
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -90,8 +91,21 @@ namespace WpfApp5
            MainWindow mainWindow = new MainWindow();
             
             Window1 window1 = new Window1();
-            mainWindow.Close();
+            this.Close();
             window1.Show();
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow1 = new MainWindow();
+            Window1 window1 = new Window1();
+            this.Close();
+            window1.Show();
+        }
+
+        private void Login_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

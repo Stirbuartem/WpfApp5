@@ -15,29 +15,21 @@ using System.Windows.Shapes;
 namespace WpfApp5
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для Window5.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window5 : Window
     {
-        public Window2()
+        public Window5()
         {
             InitializeComponent();
         }
 
-        private void teacher_Click(object sender, RoutedEventArgs e)
+        private void back_Click(object sender, RoutedEventArgs e)
         {
             Window2 window2 = new Window2();
             Window5 window5 = new Window5();
             this.Close();
-            window5.Show();
-        }
-
-        private void courses_Click(object sender, RoutedEventArgs e)
-        {
-            Window4 window4 = new Window4();
-            Window2 window2 = new Window2();
-            this.Close();
-            window4.Show();
+            window2.Show();
         }
     }
 }

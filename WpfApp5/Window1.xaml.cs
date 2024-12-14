@@ -71,9 +71,12 @@ namespace WpfApp5
         {
             Window2 window2 = new Window2();
             Window1 window1 = new Window1();
-            MainWindow mainWindow = new MainWindow();
-            window1.Close();
+            
+            
+            this.Close();
             window2.Show();
+
         }
+        
     }
 }

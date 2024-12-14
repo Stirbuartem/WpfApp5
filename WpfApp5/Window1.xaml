@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp5"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
+        Title="Window1" Height="450" Width="800" Background="#FF2F1088">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.OpacityMask>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF5D0D0D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
         <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="45" Color="LightGray" ShadowDepth="0" />
@@ -15,7 +21,7 @@
                 <TextBlock HorizontalAlignment="Center" Text="Enter the login information" FontSize="25" FontWeight="Bold" Margin="0 0 0 20" />
                 <TextBox x:Name="Login" GotFocus="Login_GotFocus" LostFocus="Login_LostFocus" Text="введите ваш логин"  />
                 <TextBox x:Name="Password" Text="введите ваш пароль" GotFocus="Password_GotFocus" LostFocus="Password_LostFocus"  Margin="0 0 0 10"/>
-                <Button Content="Sign" Click="Button_Click"   />
+                <Button Content="Sign" Click="Button_Click" IsCancel="True" Background="#FF7262A2" />
             </StackPanel>
         </Border>
     </Grid>

@@ -10,6 +10,13 @@
 
   <ItemGroup>
     <None Remove="image\it.jpg" />
+    <None Remove="image\teacher.jpg" />
+    <None Remove="image\vb5NfkqaIK5Sng9u6j4gA.jpg" />
+    <None Remove="image\Снимок экрана 2024-11-29 222427.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\vb5NfkqaIK5Sng9u6j4gA.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +35,8 @@
 
   <ItemGroup>
     <Resource Include="image\it.jpg" />
+    <Resource Include="image\teacher.jpg" />
+    <Resource Include="image\Снимок экрана 2024-11-29 222427.png" />
   </ItemGroup>
 
 </Project>
